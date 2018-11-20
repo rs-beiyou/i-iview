@@ -1,15 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <div>
-      <p>
-        If iView is successfully added to this project, you'll see an
-        <code v-text="'<Button>'"></code>
-        below
-      </p>
-      <Button type="primary" @click="modal1 = true">Button</Button>
-    </div>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Button type="primary" @click="modal1 = true">弹窗</Button>
     <Modal
         v-model="modal1"
         title="Common Modal dialog box title">
@@ -21,18 +12,19 @@
           <div style="height: 150px"></div>
         </div>
     </Modal>
+    <a href="/#/"><Button type="primary">Home</Button></a>
+    <a href="/#/about"><Button type="info">About</Button></a>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import { Button, Modal, Select, Option } from 'iview'
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'app',
   components: {
     Button,
-    HelloWorld,
     Modal,
     Select,
     Option

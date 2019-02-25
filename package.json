@@ -1,5 +1,5 @@
 {
-  "name": "zjhcsoft-iview",
+  "name": "i-iview",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -21,6 +21,7 @@
     "axios": "^0.18.0",
     "babel-eslint": "^10.0.1",
     "babel-plugin-import": "^1.8.0",
+    "compression-webpack-plugin": "^2.0.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0-0",
     "less": "^3.0.4",

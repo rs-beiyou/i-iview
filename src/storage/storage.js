@@ -2,7 +2,7 @@ const packageInfo = require('../../package.json')
 
 class Storage {
   constructor (storageType) {
-    this.root = packageInfo.name + '-zjhcsoft'
+    this.root = packageInfo.name + '-ocobo'
     this.storage = window[storageType || 'localStorage']
   }
   set (key, value) {
